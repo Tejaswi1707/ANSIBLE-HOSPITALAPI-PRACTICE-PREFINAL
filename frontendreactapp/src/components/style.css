@@ -1,0 +1,160 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background and Centering */
+body {
+  background-color: #ffffff; /* Plain white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+  background-color: #ffffff;
+  width: 480px; /* slightly wider for better layout */
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Title Section */
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e3a8a; /* Dark navy for visibility */
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2563eb; /* Bright blue for contrast */
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #93c5fd;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Section Headings (like Add Doctor, Get Doctor By ID, All Doctors) */
+h3,
+h4 {
+  color: #0f172a; /* Dark gray-blue for visibility */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Input Fields */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1.5px solid #c7d2fe;
+  font-size: 14px;
+  color: #1e293b; /* Dark gray text for readability */
+  background-color: #f9fafb;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+}
+
+input::placeholder,
+select option {
+  color: #475569;
+}
+
+input:focus,
+select:focus {
+  border-color: #2563eb;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Doctor List */
+.doctor-list {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.doctor-item {
+  background-color: #f9faff;
+  border: 1px solid #e0e7ff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  transition: all 0.2s ease-in-out;
+  color: #1e293b;
+}
+
+.doctor-item:hover {
+  background-color: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+/* Messages */
+.message {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.success {
+  background-color: #e6ffed;
+  color: #15803d;
+  border: 1px solid #a7f3d0;
+}
+
+.error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
