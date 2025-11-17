@@ -2,7 +2,6 @@ node_modules
 dist
 .git
 .gitignore
-.metadata
 
 # Docker files themselves
 Dockerfile
